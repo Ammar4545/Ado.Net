@@ -14,15 +14,15 @@ namespace ExecuteInsertRawSql
 
             var walletToInsert = new Wallet
             {
-                Holder = "Essam",
-                Balance = 1500
+                Holder = "samar",
+                Balance = 2000
             };
 
             //create connection to database
             SqlConnection connection = new SqlConnection(configuration.GetConnectionString("default"));
             //sql statment
-            var sql = "Insert into Wallets (Holder, Balance) Values (@Holder,@Balance)" +
-                $"" ;
+            var sql = "Insert into Wallets (Holder, Balance) Values (@Holder,@Balance);" +
+                $"SELECT CAST(scope_identity() AS int)" ;
             //Create parameter
             SqlParameter holderParameter = new SqlParameter
             {
@@ -48,14 +48,18 @@ namespace ExecuteInsertRawSql
 
             connection.Open();
 
-            if (command.ExecuteNonQuery() > 0)
-            {
-                Console.WriteLine($"Wallet for {walletToInsert.Holder} was added");
-            }
-            else
-            {
-                Console.WriteLine($"Wallet for {walletToInsert.Holder} was not added");
-            }
+            walletToInsert.Id = (int)command.ExecuteScalar();
+
+            Console.WriteLine($"Wallet for {walletToInsert.Holder} was added");
+
+            //if (command.ExecuteNonQuery() > 0)
+            //{
+            //    Console.WriteLine($"Wallet for {walletToInsert.Holder} was added");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Wallet for {walletToInsert.Holder} was not added");
+            //}
 
             connection.Close();
 
