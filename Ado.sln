@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertStoredProcedure", "In
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateRawSql", "UpdateRawSql\UpdateRawSql.csproj", "{D972F882-0A43-4FC3-9398-8CF0C80E9EA9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteRawSql", "DeleteRawSql\DeleteRawSql.csproj", "{87F6BD8E-EB6A-4ECA-8386-BBCDA274072B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D972F882-0A43-4FC3-9398-8CF0C80E9EA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D972F882-0A43-4FC3-9398-8CF0C80E9EA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D972F882-0A43-4FC3-9398-8CF0C80E9EA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87F6BD8E-EB6A-4ECA-8386-BBCDA274072B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87F6BD8E-EB6A-4ECA-8386-BBCDA274072B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87F6BD8E-EB6A-4ECA-8386-BBCDA274072B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87F6BD8E-EB6A-4ECA-8386-BBCDA274072B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
