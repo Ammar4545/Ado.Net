@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connection", "Connection\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecuteRawSql", "ExecuteRawSql\ExecuteRawSql.csproj", "{889AFB6B-3087-4101-8CB6-EE5382D2894D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecuteInsertRawSql", "ExecuteInsertRawSql\ExecuteInsertRawSql.csproj", "{C8FEB273-8932-4AE1-9727-DF1883F2C0DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{889AFB6B-3087-4101-8CB6-EE5382D2894D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{889AFB6B-3087-4101-8CB6-EE5382D2894D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{889AFB6B-3087-4101-8CB6-EE5382D2894D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8FEB273-8932-4AE1-9727-DF1883F2C0DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8FEB273-8932-4AE1-9727-DF1883F2C0DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8FEB273-8932-4AE1-9727-DF1883F2C0DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8FEB273-8932-4AE1-9727-DF1883F2C0DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
